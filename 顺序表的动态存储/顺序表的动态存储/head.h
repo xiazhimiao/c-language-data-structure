@@ -1,4 +1,5 @@
 #pragma once
+#include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
 const int InitSize = 100;
