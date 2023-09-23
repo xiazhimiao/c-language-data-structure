@@ -6,7 +6,7 @@ int main()
 	Node* first = NULL;//头指针
 	first = CreatList1(r, 5);//头插法
 	PrintfList(first);
-	Insert(first, 2, 8);
+	Insert(first, 1, 8);
 	PrintfList(first);
 	printf("当前链表长度%d\n", Length(first));
 	//元素查找

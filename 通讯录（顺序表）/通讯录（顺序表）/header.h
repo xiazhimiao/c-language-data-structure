@@ -15,11 +15,11 @@ typedef struct {
 	int size;           // 当前通讯录中的联系人数量
 	int capacity;       // 通讯录的容量
 } AddressBook;
-//初始化单链表
+//初始化顺序表
 void init(AddressBook* book);
 //插入数据
 void insert(AddressBook* book, const char* name, const char* phone);
-//遍历单链表
+//遍历顺序表
 void traverse(AddressBook* book);
 //查找名字
 int search(AddressBook* book, const char* name);
