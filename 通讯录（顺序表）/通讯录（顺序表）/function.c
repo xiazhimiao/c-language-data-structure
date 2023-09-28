@@ -17,7 +17,7 @@ void insert(AddressBook* book, const char* name, const char* phone) {
 	strncpy(newContact->name, name, MAX_NAME_LENGTH);
 	strncpy(newContact->phone, phone, MAX_PHONE_LENGTH);
 	book->size++;
-}
+}	
 void traverse(AddressBook* book)//遍历
 {
 	printf("通讯录内容：\n");
