@@ -2,12 +2,15 @@
 #include "header.h"
 int main()
 {
+	//循环队列是通过浪费一个空间的方式，来区别队列满否
 	DataType x=0;
 	CirQueue Q;           //定义结构体变量Q为循环队列类型
 	InitQueue(&Q);        //初始化循环队列Q
 	//对5和8执行入队操作
 	EnQueue(&Q, 5);
 	EnQueue(&Q, 8);
+	
+
 	//取队头元素
 	if (GerHead(&Q, &x) == 1)
 	{

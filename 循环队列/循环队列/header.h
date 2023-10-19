@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#define QueueSize 100     //定义数组的最大长度
+#define QueueSize 5     //定义数组的最大长度
 typedef int DataType;     //定义队列元素的数据类型，假设为int型
 typedef struct
 {
