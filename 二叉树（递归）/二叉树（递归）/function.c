@@ -1,9 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "function.h"
+//扩展二叉树前序建立二叉树
 BiNode* CreatBiTree(BiNode* root)
 {
 	char ch;
 	scanf("%c", &ch);
+	//getchar();
 	if (ch == '#')
 	{
 		root = NULL;
@@ -35,9 +37,9 @@ void InOrder(BiNode* root) {
 		return;
 	else
 	{
-		PreOrder(root->lchild);
+		InOrder(root->lchild);
 		printf("%c", root->data);
-		PreOrder(root->rchild);
+		InOrder(root->rchild);
 	}
 }
 //后序遍历
@@ -46,8 +48,8 @@ void PostOrder(BiNode* root) {
 		return;
 	else
 	{
-		PreOrder(root->lchild);
-		PreOrder(root->rchild);
+		PostOrder(root->lchild);
+		PostOrder(root->rchild);
 		printf("%c", root->data);
 	}
 }
