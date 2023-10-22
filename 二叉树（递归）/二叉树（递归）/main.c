@@ -1,24 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "function.h"
-void p2(BiNode* root)
-{
-	BiNode* s[10], * bt = root;
-	int top = -1;
-	while (bt->data!='#' ||top!=-1)
-	{
-		while (bt->data != '#')
-		{
-			printf("%c", bt->data);
-			s[++top] = bt;
-			bt = bt->lchild;
-		}
-		if (top != -1)
-		{
-			bt = s[top--];
-			bt = bt->rchild;
-		}
-	}
-}
+
 int main()
 {
 	char arr[10] = "ab#d##c##";
@@ -34,9 +16,17 @@ int main()
 	InOrder(root);
 	printf("\n该二叉树的后序遍历序列是：");
 	PostOrder(root);
-	printf("\n");
+	printf("\n----------------以下是非递归算法------------------");
+	
+	//BiNode* root1 = NULL;//定义二叉树的根指针变量
+	//root1 = p0(root1);//扩展二叉树非递归中序建立二叉树
+	p1(root);
 	p2(root);
 
 	DestroyBiTree(root);
+
+
+
+
 	return 0;
 }

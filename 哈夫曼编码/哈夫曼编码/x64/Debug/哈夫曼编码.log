@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\Code\c-language-data-structure\哈夫曼编码\哈夫曼编码\main.cpp(72,13): warning C4101: “lnode”: 未引用的局部变量
+D:\Code\c-language-data-structure\哈夫曼编码\哈夫曼编码\main.cpp(72,6): warning C4101: “rnode”: 未引用的局部变量
+D:\Code\c-language-data-structure\哈夫曼编码\哈夫曼编码\main.cpp(71,12): warning C4101: “min2”: 未引用的局部变量
+D:\Code\c-language-data-structure\哈夫曼编码\哈夫曼编码\main.cpp(71,6): warning C4101: “min1”: 未引用的局部变量
+  哈夫曼编码.vcxproj -> D:\Code\c-language-data-structure\哈夫曼编码\x64\Debug\哈夫曼编码.exe

@@ -17,3 +17,9 @@ void InOrder(BiNode* root);
 void PostOrder(BiNode* root);
 //销毁二叉树
 void DestroyBiTree(BiNode *root);
+//扩展二叉树非递归中序建立二叉树
+//BiNode* p0(BiNode* root);
+//非递归前序遍历
+void p1(BiNode* root);
+//非递归中序遍历
+void p2(BiNode* root);
