@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Code\c-language-data-structure\图-邻接表\图-邻接表\main.cpp(35): warning C4715: “Init”: 不是所有的控件路径都返回值
+  图-邻接表.vcxproj -> D:\Code\c-language-data-structure\图-邻接表\x64\Debug\图-邻接表.exe

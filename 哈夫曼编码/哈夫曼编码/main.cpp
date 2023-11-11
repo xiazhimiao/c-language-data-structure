@@ -43,11 +43,11 @@ int initHuffmanTree(huffmanTree& HT)
 	printf("please input some weight!\n");
 	for (int i = 1; i <= NODENUM; i++)								//权值只有1-n个
 	{
-		int result = scanf("%d", &HT[i].weight);
-		if (result != 1) {
-			printf("读取失败%d\n", i);
-
-		}
+		int k = scanf("%d", &HT[i].weight);
+		if (k != 1)
+		{
+			printf("读取错误");
+		}//给每个结点赋予权值
 	}
 	char c = getchar();											//这个来接收上面的回车
 	printf("please input some data!\n");
@@ -72,14 +72,10 @@ void creatHuffmanTree(huffmanTree& HT, int n)
 	int rnode, lnode;													//定义两个下标值，来存储每次选取最小两个结点的下标
 	for (int i = n + 1; i <= 2 * n - 1; i++)								//要生成n-1个结点，所以要操作n—1次且从下标为n+1开始存储
 	{
-		int min1 = MAXVALUE;
-		int lnode = -1;							//让最小值初始化为极大值，这样叶子结点的最大值再大也不会超过这个值了							
-		int min2 = MAXVALUE;
-		int rnode = -1;
-		for (int j = 1; j <= i - 1; j++)								
-			//因为起先是在前n个中选择最小的两个结点的权值，但新生成一个后就得在前n+1个中选择最小的两个结点的权值							
-		{																
-			//假设n = 10 总结点数就得为19，那我们就只要比较18次就可以得出结果了，记住比较的次数比生成的总结点数少1
+		int min1 = MAXVALUE; int lnode = -1;							//让最小值初始化为极大值，这样叶子结点的最大值再大也不会超过这个值了							
+		int min2 = MAXVALUE; int rnode = -1;
+		for (int j = 1; j <= i - 1; j++)								//因为起先是在前n个中选择最小的两个结点的权值，但新生成一个后就得在前n+1个中选择最小的两个结点的权值							
+		{																//假设n = 10 总结点数就得为19，那我们就只要比较18次就可以得出结果了，记住比较的次数比生成的总结点数少1
 			if (HT[j].weight < min1 && HT[j].parent == -1)			//这个小于就使得当出现相同的权值时优先考虑先出现的值，可以假设下
 			{
 				min2 = min1;	rnode = lnode;						//碰到比min1小的，那min1的值就给第二小的min2，下标也给它
