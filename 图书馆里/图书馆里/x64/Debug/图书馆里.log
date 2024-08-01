@@ -1,0 +1,26 @@
+﻿  图书销售管理系统.cpp
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4477: “fprintf”: 格式字符串“%.1f”需要类型“double”的参数，但可变参数 2 拥有了类型“float *”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4477: “fprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 3 拥有了类型“int *”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4313: "fprintf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 3 冲突
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4477: “fprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 4 拥有了类型“int *”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4313: "fprintf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 4 冲突
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4477: “fprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 5 拥有了类型“int *”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(121,15): warning C4313: "fprintf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 5 冲突
+C:\Users\33096\Desktop\图书销售管理系统.cpp(117,13): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(137,20): warning C4476: "fscanf": 格式说明符中的类型字段字符“.”未知
+C:\Users\33096\Desktop\图书销售管理系统.cpp(137,20): warning C4477: “fscanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 2 拥有了类型“float *”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(137,125): warning C4474: fscanf: 格式字符串中传递的参数太多
+C:\Users\33096\Desktop\图书销售管理系统.cpp(137,125): message : 占位符和其参数预计 4 可变参数，但提供的却是 5 参数
+C:\Users\33096\Desktop\图书销售管理系统.cpp(130,13): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(134,8): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(137,9): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(269,10): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“int”
+C:\Users\33096\Desktop\图书销售管理系统.cpp(169,2): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(174,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(185,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(207,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(222,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(236,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(255,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(262,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\33096\Desktop\图书销售管理系统.cpp(269,4): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

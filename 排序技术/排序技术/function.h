@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <time.h>
+#include <malloc.h>
 #define MAX 10
 using namespace std;
 //初始化
@@ -14,4 +15,7 @@ void traverse(int arr[],int max);
 void ShellSort(int arr[], int n);
 //快速排序
 void QuickSort(int arr[], int low, int high);
-
+//简单选择排序
+void SelectSort(int arr[], int n);
+//二路归并排序
+void mergeSort(int arr[], int size);

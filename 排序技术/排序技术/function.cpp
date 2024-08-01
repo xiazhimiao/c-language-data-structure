@@ -82,3 +82,104 @@ void QuickSort(int arr[], int low, int high) {
 		QuickSort(arr, pi + 1, high);
 	}
 }
+
+//简单选择排序
+void SelectSort(int arr[], int n)
+{
+	int i, j, index;
+	for (i = 1; i < n; ++i)
+	{
+		index = i;
+		for (j = i + 1; j < n; ++j)
+		{
+			if (arr[j] < arr[index])
+			{
+				index = j;
+			}
+		}
+		if (index != i)
+		{
+			arr[0] = arr[i]; arr[i] = arr[index]; arr[index] = arr[0];
+		}
+	}
+}
+//二路归并排序
+void Merge(int r[], int s, int m, int t)
+{
+	int r1[100];
+	int i = s, j = m + 1, k = s;
+	while (i <= m && j <= t)
+	{
+		if (r[i] <= r[j])r1[k++] = r[i++];
+		else r1[k++] = r[j++];
+	}
+	while (i <= m)
+	{
+		r1[k++] = r[i++];
+	}
+	while (j <= t)
+	{
+		r1[k++] = r[j++];
+	}
+	for (i = s; i < t; ++i)
+	{
+		r[i] = r1[i];
+	}
+}
+void MergeSort1(int r[], int s, int t)
+{
+	int  m;
+	if (s == t)return;
+	m = (s + t) / 2;
+	MergeSort1(r, s, m);
+	MergeSort1(r, m + 1, t);
+	Merge(r, s, m, t);
+
+}
+//二路归并排序
+void merge(int arr[], int left[], int leftSize, int right[], int rightSize) {
+	int i = 0, j = 0, k = 0;
+
+	while (i < leftSize && j < rightSize) {
+		if (left[i] <= right[j]) {
+			arr[k++] = left[i++];
+		}
+		else {
+			arr[k++] = right[j++];
+		}
+	}
+
+	while (i < leftSize) {
+		arr[k++] = left[i++];
+	}
+
+	while (j < rightSize) {
+		arr[k++] = right[j++];
+	}
+}
+
+void mergeSort(int arr[], int size) {
+	if (size <= 1) {
+		return;
+	}
+
+	int mid = size / 2;
+	int* left = (int*)malloc(mid * sizeof(int));
+	int* right = (int*)malloc((size - mid) * sizeof(int));
+
+	for (int i = 0; i < mid; i++) {
+		left[i] = arr[i];
+	}
+
+	for (int i = mid; i < size; i++) {
+		right[i - mid] = arr[i];
+	}
+
+	mergeSort(left, mid);
+	mergeSort(right, size - mid);
+	merge(arr, left, mid, right, size - mid);
+
+	free(left);
+	free(right);
+}
+
